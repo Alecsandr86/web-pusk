@@ -1,0 +1,220 @@
+@import "partials/path";
+@import "partials/print";
+/////////////////////////////////////
+
+
+// first-box
+
+
+.first-box{
+  background : url('../images/bg-first-box.jpg') 50% 0 no-repeat;
+  min-height : 760px;
+  -webkit-background-size : cover;
+  background-size         : cover;
+  padding: 23px 0;
+  color : #fff;
+}
+.header-top{ 
+}
+.color-box{
+  color : #fff;
+  font-family: $ff-nspr;
+  a{
+    color : #fff;
+  }
+}
+.button-menu{
+  padding: 14px 0;
+  text-decoration : none;
+  i{
+    margin : 0 0 0 9px;
+    vertical-align : middle;
+  }
+}
+
+.nav-box{
+  position : relative;
+  min-height : 307px;
+  .item-nav{
+    position : absolute;
+    width: 250px;
+    height: 250px;
+    padding : 40px 25px 0;
+    -webkit-border-radius : 50%;
+    -moz-border-radius    : 50%;
+    border-radius         : 50%;
+    //background-color : rgba(237, 20, 91, 0.8);
+    color : #fff;
+    .top{
+      vertical-align : middle;
+      text-align : center;
+      strong,i{
+        vertical-align : middle;
+        display : inline-block;
+        font-size: rem(20);
+      }
+      strong{
+        margin : 0 0 0 10px;
+      }
+    }
+    ul{
+      display : none;
+      list-style-type : disc;
+      padding : 20px 0 0 30px;
+      li{
+        font-size : rem(14);
+        padding : 2px 0;
+      }
+    }
+  }
+  .diz{
+    top: 100px;
+    left: 0;
+  }
+  .raz{
+    top : 0;
+    left : 288px;
+  }
+  .pod{
+    top : 0;
+    left : 584px;
+  }
+  .mar{
+    top: 87px;
+    left: 872px;
+  }
+}
+
+.line-box{
+  height : 2px;
+  width : 100%;
+}
+
+.description-box{
+  text-align : center;
+  padding : 8px 0 0;
+  h1{
+    line-height : 54px;
+  }
+  p{
+    font-size : rem(16);
+  }
+}
+.link-button{
+  -webkit-border-radius : 30px;
+  -moz-border-radius    : 30px;
+  border-radius         : 30px;
+  display : inline-block;
+  margin-top : 16px;
+  padding : 10px 46px;
+  border: 2px solid #f8f8f8;
+  text-transform : uppercase;
+  text-decoration : none;
+  color : #fff;
+  &.dark{
+    border-color : #212121;
+    color : #212121;
+  }
+}
+.thee-line{
+  margin-top : 38px;
+}
+
+.logo{
+  position : absolute;
+  bottom : 0;
+  left : 50%;
+  margin-left : -37px;
+  
+}
+// \first-box\
+
+
+// our-work
+
+.our-work{
+  background-color : #f6f6f6;
+  padding: 24px 0;
+}
+.line-h{
+  position : relative;
+  text-align : center;
+  padding : 28px 0;
+  &:after{
+    content : '';
+    display : inline-block;
+    width: 92px;
+    height: 2px;
+    background-color: #cacaca;
+    position : absolute;
+    bottom : 0;
+    left : 50%;
+    margin-left : -46px;
+  }
+}
+.box-work{
+  padding : 49px 0 6px;
+}
+.item-work{
+  margin-bottom : 26px;
+  position : relative;
+  &:hover{
+    a{
+      opacity: 1;
+      -webkit-transform: scale(1,1);
+      -moz-transform: scale(1,1);
+      -ms-transform: scale(1,1);
+      -o-transform: scale(1,1);
+      transform: scale(1,1);
+    }
+  }
+  a{
+    display : block;
+    position : absolute;
+    top : 0;
+    left : 0;
+    right : 0;
+    bottom : 0;
+    background-color : rgba(0, 13, 47, .6);
+    text-align : center;
+    padding-top : 26%;
+    text-decoration : none;
+    color : #fff;
+    @include transition(all 0.5s $ease-out-cubic);
+    opacity: 0;
+    -webkit-transform: scale(0.5,0.5);
+    -moz-transform: scale(0.5,0.5);
+    -ms-transform: scale(0.5,0.5);
+    -o-transform: scale(0.5,0.5);
+    transform: scale(0.5,0.5);
+    
+    strong{
+      display : block;
+      font-size : rem(24);
+      padding : 0 0 10px;
+    }
+    span{
+      font-size : rem(18);
+      font-family : $ff-nsplig;
+    }
+  }
+  img{
+    width : 100%;
+    margin: 0 0 -2px;
+  }
+}
+.button-wr{
+  text-align : center;
+}
+
+// \our-work\
+
+
+
+//************ ПЛАВНАЯ АНИМАЦИЯ ***********//
+//@include transition(all 0.5s $ease-out-cubic);
+
+
+
+/////////////////////////////////////////
+@import "partials/media";
