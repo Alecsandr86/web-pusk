@@ -20,6 +20,7 @@
     "bootstrap": "v4.0.0-alpha.2",
     "animate.css": "^3.5.1",
     "bourbon": "^4.2.6",
-    "normalize.sass": "^3.0.0"
+    "normalize.sass": "^3.0.0",
+    "bxslider-4": "^4.2.5"
   }
 }

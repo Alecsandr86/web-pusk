@@ -15,8 +15,11 @@ $(document).ready(function(){
     };
 
 
-    $('span').bind('click',function(){
-        alert('Все работает!!! :)')
-    })
+    $('.slid-reviews').bxSlider({
+        pager: false,
+        adaptiveHeight: true,
+        nextText:"<i class='slid-reviews-next'></i>",
+        prevText:"<i class='slid-reviews-prev'></i>"
+    });
 
 });
