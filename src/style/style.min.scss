@@ -3,6 +3,16 @@
 /////////////////////////////////////
 
 
+
+body.menu-active .main-content__inner {
+  -webkit-transform: translate3d(0, 0, -300px);
+  transform: translate3d(0, 0, -300px);
+  -webkit-transition: -webkit-transform 0.33333s;
+  transition: transform 0.33333s;
+}
+
+
+
 // first-box
 
 
@@ -35,6 +45,14 @@
 .nav-box{
   position : relative;
   min-height : 307px;
+  overflow: hidden;
+  .box-wr-nav{
+    position: absolute;
+    top: 500px;
+    left: 0;
+    width: 100%;
+    min-height : 307px;
+  }
   .nva-wr{
     position : absolute;
     top: -48px;
@@ -121,11 +139,24 @@
 .line-box{
   height : 2px;
   width : 100%;
+  text-align: center;
+  .lb-l{
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    opacity: 0;
+    display: inline-block;
+  }
 }
 
 .description-box{
   text-align : center;
   padding : 8px 0 0;
+  overflow: hidden;
+  .wrap-descr-box{
+    position: relative;
+    top: - 500px;
+  }
   h1{
     line-height : 54px;
   }
