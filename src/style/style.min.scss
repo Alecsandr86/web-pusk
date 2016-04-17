@@ -35,19 +35,46 @@
 .nav-box{
   position : relative;
   min-height : 307px;
-  .item-nav{
+  .nva-wr{
     position : absolute;
+    top: -48px;
+    left: 14px;
     width: 250px;
     height: 250px;
-    padding : 40px 25px 0;
+    padding: 121px 35px 0;
     -webkit-border-radius : 50%;
     -moz-border-radius    : 50%;
     border-radius         : 50%;
+    background-color : rgba(237, 20, 91, 0.8);
+    opacity: 0;
+    -webkit-transform: scale(0.2,0.2);
+    -moz-transform: scale(0.2,0.2);
+    -ms-transform: scale(0.2,0.2);
+    -o-transform: scale(0.2,0.2);
+    transform: scale(0.2,0.2);
+    @include transition(all 0.7s $ease-out-cubic);
+  }
+  .item-nav{
+    position : absolute;
+    width: 250px;
     //background-color : rgba(237, 20, 91, 0.8);
     color : #fff;
+    &:hover{
+      .nva-wr{
+        opacity: 1;
+        -webkit-transform: scale(1,1);
+        -moz-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -o-transform: scale(1,1);
+        transform: scale(1,1);
+     
+      }
+    }
     .top{
       vertical-align : middle;
       text-align : center;
+      position: relative;
+      z-index: 2;
       strong,i{
         vertical-align : middle;
         display : inline-block;
@@ -58,12 +85,18 @@
       }
     }
     ul{
-      display : none;
       list-style-type : disc;
       padding : 20px 0 0 30px;
       li{
         font-size : rem(14);
         padding : 2px 0;
+        a{
+          color: #FFFFFF;
+          text-decoration: none;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
       }
     }
   }

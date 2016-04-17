@@ -1,3 +1,157 @@
-body{
-  //background-color: yellow;
+@media screen and (max-width: 1129px) {
+  .nav-box {
+    .item-nav {
+      width: 200px;
+      .top {
+        strong {
+          margin: 10px 0 0;
+        }
+        
+      }
+    }
+
+  }
+
+  
+  .nav-box {
+    .nva-wr {
+      left: -15px;
+    }
+    .diz {
+      left: 17px;
+      top: 160px;
+    }
+    .raz{
+      left: 220px;
+      top: -9px;
+    }
+    .pod{
+      left: 520px;
+      top: -9px;
+    }
+    .mar{
+      left: 700px;
+      top: 160px;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .nav-box {
+    min-height: 360px;
+    .nva-wr {
+      top: -36px;
+      left: -11px;
+      width: 220px;
+      height: 220px;
+      padding: 100px 35px 0;
+    }
+    .diz{
+      left: 0;
+    }
+    .raz {
+      left: 150px;
+    }
+    .pod {
+      left: 400px;
+    }
+    .mar{
+      left: 525px;
+    }
+  }
+  .item-work {
+    img {
+      height: 200px;
+    }
+  }
+
+  .bx-controls{
+    &:after,
+    &:before {
+      width: 40%;
+    }
+  }
+  .our-contacts {
+    width: auto;
+  }
+  .list-con-our {
+    padding: 0 30px;
+  }
+  
+  
+}
+
+@media screen and (max-width: 767px) {
+  .header-top{
+    padding: 0 20px;
+  }
+  .nav-box{
+    min-height: 880px;
+    padding: 40px 0;
+    .item-nav{
+      position: relative;
+      top: 0;
+      left: 50%;
+      margin-left: -100px;
+      height: 180px;
+      .top{
+        text-align: left;
+      }
+    }
+  }
+
+  .slid-reviews {
+    .item {
+      p {
+        height: 200px;
+        overflow: hidden;
+        padding: 14px 10px;
+      }
+    }
+  }
+
+  .bx-controls{
+    &:after,
+    &:before {
+      width: 35%;
+    }
+  }
+
+  .label-brend {
+    li {
+      margin: 0 0 10px;
+      width: 48%;
+      text-align: center;
+    }
+  }
+
+  .list-methodol{
+    li {
+      width: 100%;
+      padding: 10px 0;
+      color: #818181;
+    }
+  }
+
+  .our-plus{
+    li {
+      padding: 15px 0;
+    }
+  }
+  .titles-our {
+    padding: 10px 20px 60px;
+  }
+
+  .list-con-our {
+    padding: 0 15px 30px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
 }
