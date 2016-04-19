@@ -1,15 +1,9 @@
 @import "partials/path";
 @import "partials/print";
+@import "partials/animate.min";
 /////////////////////////////////////
 
 
-
-body.menu-active .main-content__inner {
-  -webkit-transform: translate3d(0, 0, -300px);
-  transform: translate3d(0, 0, -300px);
-  -webkit-transition: -webkit-transform 0.33333s;
-  transition: transform 0.33333s;
-}
 
 
 
@@ -24,7 +18,24 @@ body.menu-active .main-content__inner {
   padding: 23px 0;
   color : #fff;
 }
-.header-top{ 
+.header-top{
+  position: fixed;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  @include transition(all 0.5s $ease-out-cubic);
+  &.active{
+    color: #212121;
+    .button-menu{
+      color: #212121;
+    }
+    #burg{
+      path{
+        fill: #212121!important;
+      }
+    }
+  }
 }
 .color-box{
   color : #fff;
@@ -36,13 +47,30 @@ body.menu-active .main-content__inner {
 .button-menu{
   padding: 14px 0;
   text-decoration : none;
+  span{
+    vertical-align: top;
+    display: inline-block;
+    margin: 0 5px 0 0;
+    @include transition(all 0.5s $ease-out-cubic);
+  }
   i{
     margin : 0 0 0 9px;
     vertical-align : middle;
   }
 }
 
+#burg{
+  path{
+    //fill: #212121!important;
+    @include transition(all 0.5s $ease-out-cubic);
+  }
+}
+
+
+
+
 .nav-box{
+  margin: 64px 0 0;
   position : relative;
   min-height : 307px;
   overflow: hidden;
@@ -79,6 +107,7 @@ body.menu-active .main-content__inner {
     color : #fff;
     &:hover{
       .nva-wr{
+        @include transition(all 0.7s $ease-out-cubic);
         opacity: 1;
         -webkit-transform: scale(1,1);
         -moz-transform: scale(1,1);
@@ -100,6 +129,10 @@ body.menu-active .main-content__inner {
       }
       strong{
         margin : 0 0 0 10px;
+        a{
+          color: #FFFFFF;
+          text-decoration: none;
+        }
       }
     }
     ul{
@@ -125,14 +158,23 @@ body.menu-active .main-content__inner {
   .raz{
     top : 0;
     left : 288px;
+    .nva-wr{
+      background-color : rgba(255, 195, 0, 0.8);
+    }
   }
   .pod{
     top : 0;
     left : 584px;
+    .nva-wr{
+      background-color : rgba(164, 219, 21, 0.8);
+    }
   }
   .mar{
     top: 87px;
     left: 872px;
+    .nva-wr{
+      background-color : rgba(31, 143, 234, 0.8);
+    }
   }
 }
 
@@ -299,6 +341,7 @@ body.menu-active .main-content__inner {
   strong{
     font-size: rem(24);
     color: #000;
+    display: block;
   }
 }
 
@@ -555,6 +598,54 @@ body.menu-active .main-content__inner {
 
 // \footer\
 
+
+// nav-menu
+
+.nav-menu{
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100%;
+  background-color: #fff;
+  padding: 20% 0 0;
+  ul{
+    padding: 0 0 0 30%;
+  }
+  li{
+    padding: 5px 0;
+  }
+  a{
+    color: #000;
+    text-decoration: none;
+    font-family: $ff-nsplig;
+    font-size: rem(20);
+  }
+}
+
+.close-menu{
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+// \nav-menu\
+
+
+// задержка
+
+.delay-1{
+  animation-delay: 0.5s;
+}
+.delay-2{
+  animation-delay: 1s;
+}
+.delay-3{
+  animation-delay: 1.5s;
+}
+// \задержка\
 
 //************ ПЛАВНАЯ АНИМАЦИЯ ***********//
 //@include transition(all 0.5s $ease-out-cubic);

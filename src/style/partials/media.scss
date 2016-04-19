@@ -39,6 +39,9 @@
 @media screen and (max-width: 991px) {
   .nav-box {
     min-height: 360px;
+    .box-wr-nav{
+      min-height: 360px;
+    }
     .nva-wr {
       top: -36px;
       left: -11px;
@@ -87,7 +90,10 @@
   }
   .nav-box{
     min-height: 880px;
-    padding: 40px 0;
+    .box-wr-nav{
+      min-height: 880px;
+      padding: 40px 0;
+    }
     .item-nav{
       position: relative;
       top: 0;

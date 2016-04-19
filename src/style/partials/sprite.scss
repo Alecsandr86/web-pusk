@@ -33,6 +33,17 @@ $burger-button-total-width: 354px;
 $burger-button-total-height: 347px;
 $burger-button-image: '../images/sprite.png';
 $burger-button: (144px, 73px, -144px, -73px, 23px, 18px, 354px, 347px, '../images/sprite.png', 'burger-button', );
+$close-menu-name: 'close-menu';
+$close-menu-x: 138px;
+$close-menu-y: 153px;
+$close-menu-offset-x: -138px;
+$close-menu-offset-y: -153px;
+$close-menu-width: 19px;
+$close-menu-height: 19px;
+$close-menu-total-width: 354px;
+$close-menu-total-height: 347px;
+$close-menu-image: '../images/sprite.png';
+$close-menu: (138px, 153px, -138px, -153px, 19px, 19px, 354px, 347px, '../images/sprite.png', 'close-menu', );
 $in-ico-name: 'in-ico';
 $in-ico-x: 322px;
 $in-ico-y: 184px;
@@ -278,7 +289,7 @@ $tw-ico: (322px, 163px, -322px, -163px, 27px, 21px, 354px, 347px, '../images/spr
 $spritesheet-width: 354px;
 $spritesheet-height: 347px;
 $spritesheet-image: '../images/sprite.png';
-$spritesheet-sprites: ($brend-1, $burger-button, $in-ico, $list-chek, $logo-footer, $methodol-1, $methodol-2, $methodol-3, $methodol-4, $methodol-5, $methodol-equally, $methodol-plus, $nav-ico-1, $nav-ico-2, $nav-ico-3, $nav-ico-4, $our-plus-1, $our-plus-2, $our-plus-3, $slid-reviews-next, $slid-reviews-prev, $thee-line-up, $thee-line, $tw-ico, );
+$spritesheet-sprites: ($brend-1, $burger-button, $close-menu, $in-ico, $list-chek, $logo-footer, $methodol-1, $methodol-2, $methodol-3, $methodol-4, $methodol-5, $methodol-equally, $methodol-plus, $nav-ico-1, $nav-ico-2, $nav-ico-3, $nav-ico-4, $our-plus-1, $our-plus-2, $our-plus-3, $slid-reviews-next, $slid-reviews-prev, $thee-line-up, $thee-line, $tw-ico, );
 $spritesheet: (354px, 347px, '../images/sprite.png', $spritesheet-sprites, );
 
 /*

@@ -6,6 +6,8 @@
 //= ../../bower_components/gsap/src/minified/easing/EasePack.min.js
 //= ../../bower_components/gsap/src/minified/TimelineMax.min.js
 //= ../../bower_components/gsap/src/minified/TweenMax.min.js
+//= ../../bower_components/waypoints/lib/jquery.waypoints.min.js
+//= ../../bower_components/waypoints/lib/waypoints.debug.js
 
 /*
     Custom
