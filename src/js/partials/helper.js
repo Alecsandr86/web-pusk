@@ -120,12 +120,20 @@ $(document).ready(function(){
 
 $(function(){
     $(window).load(function() {
-            
-            var width = $(window).width();
+
+        setTimeout(function () {
+            $(".loader").fadeOut();
+        }, 1000); 
+
+
+        var width = $(window).width();
             var tl = new TimelineLite();
-                
+               
+        
             if(width > 992){
-                tl.startTime(1).to($('.lb-l'), 0.7 ,{width:"100%",opacity:'1'})
+                
+                
+                tl.startTime(2).to($('.lb-l'), 0.7 ,{width:"100%",opacity:'1'})
                     .to($('.lb-l'), 0 ,{opacity:'0'})
                     .to($('.box-wr-nav ,.wrap-descr-box'),0.7, {top:'0'})
                     .to($(".nav-box"),0,{overflow:"visible"})   
