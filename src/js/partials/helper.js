@@ -94,7 +94,7 @@ $(document).ready(function(){
             .waypoint(function (dir) {
                 $('.iw-a3,.iw-a4').addClass("animated fadeInUp").css({"opacity":"1"});
             },{
-                offset: '-30%'
+                offset: '-5%'
             });
 
         $('.our-credo')
@@ -114,26 +114,31 @@ $(document).ready(function(){
 
     // \всплывающие блоки\
     
-    
+    // модальное окно
+    // $('#myModal').on('hidden.bs.modal', function (e) {
+    //     // do something...
+    // });
+    //\модальное окн\
 });
 
 
 $(function(){
     $(window).load(function() {
 
-        setTimeout(function () {
-            $(".loader").fadeOut();
-        }, 1000); 
+        // $('.container-fluid').css({'opacity':'0'});
+        // var tl = new TimelineMax();
+        //     tl.to($('.animate'),3, {css:{backgroundPosition :"-5px -16699px"}, ease:SteppedEase.config(19)});
+        //
+        // setTimeout(function () {
+        //     //$(".loader").fadeOut();
+        // }, 2700); 
 
 
         var width = $(window).width();
-            var tl = new TimelineLite();
-               
         
             if(width > 992){
-                
-                
-                tl.startTime(2).to($('.lb-l'), 0.7 ,{width:"100%",opacity:'1'})
+                var tl2 = new TimelineMax();
+                tl2.startTime(1.5).to($('.lb-l'), 0.7 ,{width:"100%",opacity:'1'})
                     .to($('.lb-l'), 0 ,{opacity:'0'})
                     .to($('.box-wr-nav ,.wrap-descr-box'),0.7, {top:'0'})
                     .to($(".nav-box"),0,{overflow:"visible"})   

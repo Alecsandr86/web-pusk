@@ -4,7 +4,6 @@
 /////////////////////////////////////
 
 
-
 // loader
 .loader{
   background: url('../images/loader.png') 50% 50% no-repeat;
@@ -17,10 +16,41 @@
   height: 100%;
   z-index: 9999;
 }
+
+
+
+.animate{
+  position : absolute;
+  top : 40%;
+  left : 50%;
+  margin-top : -400px;
+  margin-left : -400px;
+  background-image: url("../images/sprite-animate.png");
+  background-position: -5px 2000px;
+  background-repeat: no-repeat;
+  width: 820px;
+  height: 880px;
+  -webkit-transform: scale(0.7, 0.7);
+  -moz-transform: scale(0.7, 0.7);
+  -ms-transform: scale(0.7, 0.7);
+  -o-transform: scale(0.7, 0.7);
+  transform: scale(0.7, 0.7);
+}
+
+
+
+
+
 // /loader/
 
 // first-box
 
+.modal-open{
+  
+  .header-top{
+    margin-left: -9px;
+  }
+}
 
 .first-box{
   background : url('../images/bg-first-box.jpg') 50% 0 no-repeat;
@@ -36,7 +66,10 @@
   left: 0;
   width: 100%;
   z-index: 999;
-  @include transition(all 0.5s $ease-out-cubic);
+  //@include transition(all 0.5s $ease-out-cubic);
+  .container{
+    position: relative;
+  }
   &.active{
     color: #212121;
     .button-menu{
@@ -59,6 +92,10 @@
 .button-menu{
   padding: 14px 0;
   text-decoration : none;
+  position : absolute;
+  top: 0;
+  left: -70px;
+
   span{
     vertical-align: top;
     display: inline-block;
@@ -69,6 +106,12 @@
     margin : 0 0 0 9px;
     vertical-align : middle;
   }
+}
+
+.phone{
+  position: absolute;
+  top: 0;
+  right: -105px;
 }
 
 #burg{
@@ -134,6 +177,9 @@
       text-align : center;
       position: relative;
       z-index: 2;
+      a{
+        text-decoration : none;
+      }
       strong,i{
         vertical-align : middle;
         display : inline-block;
@@ -229,6 +275,9 @@
   text-transform : uppercase;
   text-decoration : none;
   color : #fff;
+  &:focus{
+    outline: none;
+  }
   &.dark{
     border-color : #212121;
     color : #212121;
@@ -503,10 +552,10 @@
 // web-pusk-box
 
 .web-pusk-box{
-  background: url('../images/web-box-bg.jpg') 50% 0 no-repeat;
+  background: url('../images/web-box-bg.jpg') 50% 100% no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
-  min-height: 730px;
+  min-height: 780px;
   text-align: center;
   padding: 45px 0;
 }

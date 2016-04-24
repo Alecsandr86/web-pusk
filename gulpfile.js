@@ -92,7 +92,7 @@ gulp.task('style:build', function () {
         .pipe(sourcemaps.init())
         .pipe(sass({
             includePaths: ['src/style/'],
-            outputStyle: 'compressed',
+            //outputStyle: 'compressed',
             sourceMap: true,
             errLogToConsole: true
         }))
@@ -147,8 +147,6 @@ gulp.task('build', [
     'style:build',
     'fonts:build',
     'image:build',
-
-
 
 ]);
 

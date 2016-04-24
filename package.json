@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Alecsandr86/frontend#readme",
   "dependencies": {
+    "gulp-rigger": "^0.5.8",
     "imagemin-pngquant": "^4.2.0"
   },
   "devDependencies": {

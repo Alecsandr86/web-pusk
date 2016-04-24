@@ -1,3 +1,16 @@
+@media screen and (max-width: 1326px) {
+  .button-menu{
+    position: fixed;
+    top: 20px;
+    left: 10px;
+  }
+  .phone{
+    right: 10px;
+    top: 20px;
+    position: fixed;
+  }
+}
+
 @media screen and (max-width: 1129px) {
   .nav-box {
     .item-nav {
@@ -11,7 +24,6 @@
     }
 
   }
-
   
   .nav-box {
     .nva-wr {
@@ -34,6 +46,7 @@
       top: 160px;
     }
   }
+  
 }
 
 @media screen and (max-width: 991px) {
@@ -89,16 +102,17 @@
     padding: 0 20px;
   }
   .nav-box{
-    min-height: 880px;
+    min-height: 445px;
     .box-wr-nav{
-      min-height: 880px;
+      min-height: 0;
       padding: 40px 0;
     }
     .item-nav{
       position: relative;
       top: 0;
-      left: 50%;
-      margin-left: -100px;
+      left: 10%;
+      float: left;
+      margin-left: 25px;
       height: 180px;
       .top{
         text-align: left;
@@ -126,7 +140,7 @@
   .label-brend {
     li {
       margin: 0 0 10px;
-      width: 48%;
+      width: 32%;
       text-align: center;
     }
   }
@@ -151,6 +165,10 @@
   .list-con-our {
     padding: 0 15px 30px;
   }
+
+  .web-pusk-box {
+    min-height: 870px;
+  }
   
   
   
@@ -158,6 +176,43 @@
   
   
   
+}
+
+@media screen and (max-width: 543px) {
+  .nav-box {
+    min-height: 880px;
+    .box-wr-nav {
+      min-height: 860px;
+    }
+    .item-nav {
+      left: 50%;
+      float: none;
+      margin-left: -100px;
+    }
+  }
+  .item-work{
+    a {
+      padding-top: 10%;
+    }
+  }
+  .item-our {
+    margin: 50px auto;
+  }
+  .label-brend {
+    li {
+      width: 48%;
+    }
+  }
+
+  .titles-our {
+    padding: 10px 20px 0;
+  }
+  .web-pusk-box {
+    min-height: 1230px;
+  }
+  .two-con{
+    text-align: center;
+  }
   
   
 }
