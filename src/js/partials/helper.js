@@ -16,12 +16,22 @@ $(document).ready(function(){
     
     
     //  слайдер
-    $('.slid-reviews').bxSlider({
+    $('#slid-1').bxSlider({
         pager: false,
         adaptiveHeight: true,
         nextText:"<i class='slid-reviews-next'></i>",
         prevText:"<i class='slid-reviews-prev'></i>"
     });
+
+
+    $('#slid-2').bxSlider({
+        //pager: false,
+        adaptiveHeight: true,
+        nextText:"<i class='slid-reviews-next'></i>",
+        prevText:"<i class='slid-reviews-prev'></i>"
+    });
+
+
     //  \слайдер\
 
     // анимация главного экрана
