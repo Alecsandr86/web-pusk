@@ -93,7 +93,43 @@
   .list-con-our {
     padding: 0 30px;
   }
-  
+
+
+  .we-trusted-list__img{
+    width:100%;
+  }
+
+  .list-rates__item {
+    width: 30%;
+    height: 100%;
+  }
+
+  .how-works:before{
+    display: none;
+  }
+  .why-box{
+    padding:30px 0;
+  }
+  .why-box-list{
+    padding:20px 0 0;
+  }
+  .why-box-list__item{
+    width:49%;
+    padding-bottom: 20px;
+    &-big{
+      width:100%;
+    }
+  }
+
+  .why-box-btn {
+    padding: 50px 0 0;
+  }
+
+  .customer-two{
+    br{
+      display: none;
+    }
+  }
   
 }
 
@@ -169,14 +205,127 @@
   .web-pusk-box {
     min-height: 870px;
   }
+
+
+
+  .list-rates__item {
+    width: 100%;
+    margin:0;
+  }
+  .listUslug{
+    padding:15px;
+  }
   
-  
-  
-  
-  
-  
+  .listUslug__item{
+    padding:12px 0 12px 40px;
+    &:before{
+      left:0;
+    }
+  }
+
+
   
 }
+
+@media screen and (max-width: 600px) {
+  .head-two{
+    padding:20px 15px;
+  }
+  .order__h,
+  .customer-two .line-h,
+  .we-trusted__h,
+  .why-box__h,
+  .how-works__h,
+  .how-much-h,
+  .h2-big{
+    font-size:rem(35);
+    line-height:40px;
+    padding:25px 0;
+  }
+  .order-dev {
+    padding: 28px 15px 0;
+  }
+  .head-two-info,
+  .logos{
+    float: none;
+    text-align: center;
+  }
+  .head-two-btn{
+    display: block;
+    padding:20px 0;
+  }
+  .how-works-list{
+    max-width: 320px;
+    margin:0 auto;
+  }
+
+  .how-works-list__item{
+    width:100%;
+    &:before{
+      display: none;
+    }
+  }
+  .why-box-list{
+    max-width:320px;
+    margin:0 auto;
+  }
+
+  .why-box-list__item{
+    width:100%;
+  }
+
+  .why-box{
+    background: none;
+    position: relative;
+    &:before{
+      content: '';
+      background:  url("../images/why-box.jpg") 100% 0 no-repeat;
+      -webkit-background-size: cover;
+      background-size: cover;
+      width: 100%;
+      height:1200px;
+      position: absolute;
+      top:0;
+      left:0;
+      right:0;
+      z-index:-1;
+    }
+  }
+
+  .order-dev__item.item-maps,
+  .order-dev__item.item-form{
+    width:100%;
+    float: none;
+    padding:0 0 10px;
+  }
+
+
+
+
+  .why-box-text{
+    padding:0 15px;
+  }
+  .how-works{
+    padding: 0;
+  }
+  .we-trusted,
+  .we-trusted-list,
+  .how-works-list{
+    padding:20px 0;
+  }
+  .customer-two{
+    margin:0;
+  }
+  .customer-reviews{
+    min-height:100%;
+  }
+}
+
+
+
+
+
+
 
 @media screen and (max-width: 543px) {
   .nav-box {
@@ -213,6 +362,15 @@
   .two-con{
     text-align: center;
   }
-  
+
+
+  .we-trusted-list__item{
+    width:100%;
+    float: none;
+    margin:15px 0;
+  }
+  .customer-two .bx-controls i {
+    margin: 0 65px;
+  }
   
 }
